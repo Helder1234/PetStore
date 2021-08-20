@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-20T03:35:24" hostname="Helders-MacBook-Pro.local" time="2.88">
+<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-20T04:11:06" hostname="Helders-MacBook-Pro.local" time="2.754">
   <properties/>
-  <testcase name="consultarPet" classname="petstore.Pet" time="2.88"/>
-  <system-out><![CDATA[Request method:	GET
+  <testcase name="excluirPet" classname="petstore.Pet" time="2.754"/>
+  <system-out><![CDATA[Request method:	DELETE
 Request URI:	https://petstore.swagger.io/v2/pet/1003198512
 Proxy:			<none>
 Request params:	<none>
@@ -15,7 +15,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 20 Aug 2021 03:35:26 GMT
+Date: Fri, 20 Aug 2021 04:11:09 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -25,24 +25,10 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 1003198512,
-    "category": {
-        "id": 1,
-        "name": "101010333X"
-    },
-    "name": "Snoopy",
-    "photoUrls": [
-        "string"
-    ],
-    "tags": [
-        {
-            "id": 20210819,
-            "name": "data"
-        }
-    ],
-    "status": "available"
+    "code": 200,
+    "type": "unknown",
+    "message": "1003198512"
 }
-O token é 101010333X
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
