@@ -1,5 +1,5 @@
-Request method:	POST
-0Request URI:	https://petstore.swagger.io/v2/pet
+Request method:	GET
+;Request URI:	https://petstore.swagger.io/v2/pet/1003198512
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -9,29 +9,9 @@
 1				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "id": 0,
-    "category": {
-        "id": 1,
-        "name": "dog"
-    },
-    "name": "Snoopy",
-    "photoUrls": [
-        "string"
-    ],
-    "tags": [
-
-        {
-            "id": 2021,
-            "name": "sta"
-
-        }
-    ],
-    "status": "available"
-}
+Body:			<none>
 HTTP/1.1 200 OK
-$Date: Fri, 20 Aug 2021 02:36:56 GMT
+$Date: Fri, 20 Aug 2021 03:35:26 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -41,10 +21,10 @@
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372000666022835,
+    "id": 1003198512,
     "category": {
         "id": 1,
-        "name": "dog"
+        "name": "101010333X"
     },
     "name": "Snoopy",
     "photoUrls": [
@@ -53,10 +33,11 @@
     "tags": [
 
         {
-            "id": 2021,
-            "name": "sta"
+            "id": 20210819,
+            "name": "data"
 
         }
     ],
     "status": "available"
 }
+O token é 101010333X

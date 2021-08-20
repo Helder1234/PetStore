@@ -43,9 +43,31 @@ public class Pet {
                 .statusCode(200)
                 .body("name", is("Snoopy"))
                 .body("status", is("available"))
-                .body("category.name", is("dog"))
-                .body("tags.name", contains("sta"))
+                .body("category.name", is("101010333X"))
+                .body("tags.name", contains("data"))
         ;
 
+    }
+    @Test
+    public void consultarPet () {
+        String petId = "1003198512";
+
+        String token =
+
+        given()
+                .contentType("application/json")
+                .log().all()
+        .when()
+                .get(uri + "/" + petId)
+        .then()
+                .log().all()
+                .statusCode(200)
+                .body("name", is("Snoopy"))
+                .body("category.name", is("101010333X"))
+                .body("status", is("available"))
+        .extract() // Estrai o valor
+                .path("category.name") // Caminho para pegar o valor do campo
+        ;
+        System.out.println("O token é " + token);
     }
 }

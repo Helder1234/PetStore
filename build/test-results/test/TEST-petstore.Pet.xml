@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-20T02:36:54" hostname="Helders-MacBook-Pro.local" time="2.708">
+<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-20T03:35:24" hostname="Helders-MacBook-Pro.local" time="2.88">
   <properties/>
-  <testcase name="incluirPet" classname="petstore.Pet" time="2.708"/>
-  <system-out><![CDATA[Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/pet
+  <testcase name="consultarPet" classname="petstore.Pet" time="2.88"/>
+  <system-out><![CDATA[Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/1003198512
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -13,27 +13,9 @@ Headers:		Accept=*/*
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "id": 0,
-    "category": {
-        "id": 1,
-        "name": "dog"
-    },
-    "name": "Snoopy",
-    "photoUrls": [
-        "string"
-    ],
-    "tags": [
-        {
-            "id": 2021,
-            "name": "sta"
-        }
-    ],
-    "status": "available"
-}
+Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 20 Aug 2021 02:36:56 GMT
+Date: Fri, 20 Aug 2021 03:35:26 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -43,10 +25,10 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372000666022835,
+    "id": 1003198512,
     "category": {
         "id": 1,
-        "name": "dog"
+        "name": "101010333X"
     },
     "name": "Snoopy",
     "photoUrls": [
@@ -54,12 +36,13 @@ Server: Jetty(9.2.9.v20150224)
     ],
     "tags": [
         {
-            "id": 2021,
-            "name": "sta"
+            "id": 20210819,
+            "name": "data"
         }
     ],
     "status": "available"
 }
+O token é 101010333X
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
